@@ -1,18 +1,24 @@
-import firebase from "firebase";
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
-  
-  const firebaseConfig = {
-    apiKey: "AIzaSyAdCe8wQxt9Nj_jwmor6hH1r4P6dJA-FWI",
-    authDomain: "slip-ffde6.firebaseapp.com",
-    databaseURL: "https://slip-ffde6-default-rtdb.firebaseio.com",
-    projectId: "slip-ffde6",
-    storageBucket: "slip-ffde6.appspot.com",
-    messagingSenderId: "942425304071",
-    appId: "1:942425304071:web:7dff6f2854017c589ccea2"
-  };
-  
-  const app = firebase.initializeApp(firebaseConfig);
-  
-  export const db = app.firestore();
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyC1LEQgwbJFsomOfKWcxH2Gi0QUIWXcxbc",
+  authDomain: "news-917a1.firebaseapp.com",
+  projectId: "news-917a1",
+  storageBucket: "news-917a1.appspot.com",
+  messagingSenderId: "534557587851",
+  appId: "1:534557587851:web:3873b79e6bed41ecfcd78e",
+  measurementId: "G-R8PJXEGY2N"
+};
 
-  export const auth = firebase.auth();
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+
+
+export default app
