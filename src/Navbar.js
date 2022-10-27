@@ -9,7 +9,7 @@ export class Navbar extends Component {
     return (
       <nav className="navbar navbar-expand-lg navbar-light bg-light ">
         <a className="navbar-brand " href="/">
-         <span className="logo h1">Newsmonk</span> 
+         <span className="logo h1">Article</span> 
         </a>
         <button
           className="navbar-toggler"
@@ -29,8 +29,8 @@ export class Navbar extends Component {
             
            
             <li className="nav-item mx-2">
-              <a className="nav-link" href="/Business" >
-               Business
+              <a className="nav-link" href="/login" >
+               sign in
              </a>
             </li>
             <li className="nav-item mx-2">
